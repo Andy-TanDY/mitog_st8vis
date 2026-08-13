@@ -32,3 +32,29 @@ Your input CSVs must contain at least the following columns based on the script'
     text(...): Update the species name and plot title for each section.  
     frame_interval: Adjust the X-axis tick intervals (default is 2000).  
 6. Run the section of scripts for plotting : The output will generate directly in your R graphical device.  
+
+
+
+##########################################
+
+Included here is also concatenated supermatrix of 15 mitochondrial genes for 12 cardiid species, partitioned as follows:
+
+#nexus
+begin sets;
+    charset ATP6 = 1-1217;
+    charset ATP8 = 1218-1331;
+    charset COX1 = 1332-2890;
+    charset COX2 = 2891-3579;
+    charset COX3 = 3580-4410;
+    charset NAD1 = 4411-5320;
+    charset NAD2 = 5321-6291;
+    charset NAD3 = 6292-6648;
+    charset NAD4 = 6649-8007;
+    charset NAD4L = 8008-8283;
+    charset NAD5 = 8284-9965;
+    charset NAD6 = 9966-10447;
+    charset rrnL = 10448-11515;
+    charset rrnS = 11516-12185;
+end;
+
+supermatrix was used to reconstruct IQtree and RAxML phylogenies. 
